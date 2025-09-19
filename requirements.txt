@@ -1,0 +1,4 @@
+Flask==3.0.3
+Flask_SQLAlchemy==3.1.1
+SQLAlchemy==2.0.34
+Gunicorn==22.0.0

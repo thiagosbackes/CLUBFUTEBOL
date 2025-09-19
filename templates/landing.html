@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CLUBFUTEBOL</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <section class="hero">
+    <div class="backdrop"></div>
+    <div class="login-box">
+      <div class="logo">CLUBFUTEBOL</div>
+      <div style="text-align:center; margin-bottom:14px; opacity:.85">Sua pelada organizada, do cadastro à resenha.</div>
+      <form method="post" action="/auth">
+        <div class="row">
+          <input class="input" type="email" name="email" placeholder="Seu e-mail" required>
+          <input class="input" type="password" name="password" placeholder="Sua senha" required>
+          <button class="btn" type="submit">Entrar</button>
+          <a class="btn secondary" href="/auth/whatsapp">Entrar com WhatsApp</a>
+        </div>
+      </form>
+      <div class="actions" style="margin-top:10px;">
+        <a class="link" href="#">Criar conta</a>
+        <a class="link" href="#">Esqueci minha senha</a>
+      </div>
+    </div>
+    <div class="footer-min">© CLUBFUTEBOL 2025 · <a class="link" href="#">Termos</a> · <a class="link" href="#">Privacidade</a></div>
+  </section>
+</body>
+</html>

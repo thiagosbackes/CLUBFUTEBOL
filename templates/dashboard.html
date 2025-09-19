@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard - CLUBFUTEBOL</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<header style="background:#11161d; color:#fff; padding:10px">🏟️ CLUBFUTEBOL • Demo</header>
+<div style="padding:20px">
+  <h2>Bem-vindo {{ current_user.nome if current_user else "Usuário" }}</h2>
+  <p>Papel: {{ current_user.role if current_user else "desconhecido" }}</p>
+  <div class="idcard">
+    <div class="bg10">10</div>
+    <div class="content">
+      <img src="https://via.placeholder.com/80" alt="foto">
+      <div>
+        <div><b>{{ current_user.nome if current_user else "Usuário" }}</b></div>
+        <div class="small">Carteirinha Demo</div>
+      </div>
+      <div class="qr"></div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

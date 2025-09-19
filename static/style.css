@@ -1,0 +1,16 @@
+body{font-family:system-ui; margin:0; background:#0b0f14; color:#e6e8ea}
+a{color:#8fd3ff}
+.logo{text-align:center;font-weight:900;font-size:24px;margin-bottom:10px}
+.hero{position:relative;min-height:100vh;background:#0b0f14 url('/static/card_cover.png') center/cover no-repeat fixed;display:grid;place-items:center}
+.backdrop{position:absolute;inset:0;background:radial-gradient(ellipse at center, rgba(0,0,0,.25), rgba(0,0,0,.72) 60%)}
+.login-box{position:relative;z-index:2;width:100%;max-width:420px;background:rgba(16,22,31,.85);border:1px solid #1d2836;border-radius:16px;padding:20px;box-shadow:0 8px 30px rgba(0,0,0,.35)}
+.input{width:100%;padding:10px;border-radius:10px;border:1px solid #263446;background:#0f151f;color:#e6e8ea}
+.btn{display:inline-block;padding:10px;border-radius:10px;text-align:center;background:#1976d2;color:#fff}
+.btn.secondary{background:#2d3a4b; text-align:center}
+.row{display:grid;gap:12px}
+.footer-min{position:absolute;bottom:16px;left:0;right:0;text-align:center;font-size:12px;opacity:.7}
+.idcard{position:relative; width:380px; height:220px; background:#0e0f12; border-radius:14px; overflow:hidden; border:1px solid #1f2630; margin-top:20px}
+.idcard .bg10{position:absolute; inset:-20px; font-size:220px; font-weight:900; color:#1c2230; opacity:.55}
+.idcard .content{position:absolute; inset:14px; display:grid; grid-template-columns:80px 1fr 80px; gap:12px; align-items:center}
+.idcard img{width:80px; height:80px; border-radius:10px; object-fit:cover; border:2px solid #2c3a4a}
+.qr{width:80px; height:80px; background:repeating-linear-gradient(45deg,#fff,#fff 4px,#000 4px,#000 8px)}
